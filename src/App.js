@@ -36,15 +36,15 @@ function App() {
     })
   }
 
-  function Delete(id){
+  function Delete(title){
     setNotes(prev=>{
       return prev.filter((Array,index)=>{
-        return index!=id
+        return Array.title!=title
       })
     })
     setSearched(prev=>{
       return prev.filter((Array,index)=>{
-        return index!=id
+        return Array.title!=title
       })
     })
   }

@@ -2,11 +2,11 @@ import React from 'react';
 function Note(props){
 
     function handleClick(){
-        return props.onDelete(props.id)
+        return props.onDelete(props.title)
     }
     function handleEdit(){
         console.log(props.title,props.details);
-        props.onDelete(props.id)
+        props.onDelete(props.title)
         return props.onEdit(props.title,props.details)
     }
     return(
