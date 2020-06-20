@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/keeper-app/static/css/main.6882e850.chunk.css",
-    "main.js": "/keeper-app/static/js/main.66bdee01.chunk.js",
-    "main.js.map": "/keeper-app/static/js/main.66bdee01.chunk.js.map",
+    "main.js": "/keeper-app/static/js/main.60bf5cfa.chunk.js",
+    "main.js.map": "/keeper-app/static/js/main.60bf5cfa.chunk.js.map",
     "runtime-main.js": "/keeper-app/static/js/runtime-main.6298ec17.js",
     "runtime-main.js.map": "/keeper-app/static/js/runtime-main.6298ec17.js.map",
     "static/js/2.247b309b.chunk.js": "/keeper-app/static/js/2.247b309b.chunk.js",
     "static/js/2.247b309b.chunk.js.map": "/keeper-app/static/js/2.247b309b.chunk.js.map",
     "index.html": "/keeper-app/index.html",
-    "precache-manifest.b6b607320908be98d6eadd933f03e366.js": "/keeper-app/precache-manifest.b6b607320908be98d6eadd933f03e366.js",
+    "precache-manifest.09cd3e2e980b5d8c55fecd5f17b8aced.js": "/keeper-app/precache-manifest.09cd3e2e980b5d8c55fecd5f17b8aced.js",
     "service-worker.js": "/keeper-app/service-worker.js",
     "static/css/main.6882e850.chunk.css.map": "/keeper-app/static/css/main.6882e850.chunk.css.map",
     "static/js/2.247b309b.chunk.js.LICENSE.txt": "/keeper-app/static/js/2.247b309b.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6298ec17.js",
     "static/js/2.247b309b.chunk.js",
     "static/css/main.6882e850.chunk.css",
-    "static/js/main.66bdee01.chunk.js"
+    "static/js/main.60bf5cfa.chunk.js"
   ]
 }

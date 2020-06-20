@@ -1,5 +1,4 @@
 import React from 'react';
-import AddNote from './addNote';
 function Note(props){
 
     function handleClick(){
@@ -9,7 +8,6 @@ function Note(props){
         console.log(props.title,props.details);
         props.onDelete(props.id)
         return props.onEdit(props.title,props.details)
-        // <AddNote title={props.title} details={props.details} id={props.id}/>
     }
     return(
         <div className="note">

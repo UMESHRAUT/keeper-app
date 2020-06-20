@@ -3,7 +3,7 @@ function Search(props){
 
     function handleChange(event){
 
-        return props.returnSearch(event.target.value);
+        props.returnSearch(event.target.value);
     }
 
     return <input name='search' placeholder='search for note' className="search" onChange={handleChange} />

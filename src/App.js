@@ -38,7 +38,12 @@ function App() {
 
   function Delete(id){
     setNotes(prev=>{
-      return prev.filter((noteItem,index)=>{
+      return prev.filter((Array,index)=>{
+        return index!=id
+      })
+    })
+    setSearched(prev=>{
+      return prev.filter((Array,index)=>{
         return index!=id
       })
     })
