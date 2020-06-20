@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import AddNote from './addNote';
 function Search(props){
-    // const [searchItem,setSearchItem]=useState('');
 
     function handleChange(event){
-        // setSearchItem(event.target.value)
 
         return props.returnSearch(event.target.value);
     }

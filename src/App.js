@@ -9,11 +9,16 @@ function App() {
 
   const [notes,setNotes]=useState([]);
   const [searched,setSearched]=useState([])
+  const [edit,setEdit]=useState({
+    title:"",
+    details:"",
+    editNote:false
+  })
 
   function handleSerach(note){
     setSearched(()=>{
       return notes.filter((noteItem)=>{
-        if(note.length>0 && noteItem.title.includes(note))
+        if(noteItem.title.includes(note))
         {
           return noteItem;
         }
@@ -39,10 +44,19 @@ function App() {
     })
   }
   
+  function Edit(title,detail){
+    setEdit({
+      title:title,
+      details:detail,
+      editNote:true
+    })
+  }
+
+
   return (
     <div className="App">
       <Header onSearch={handleSerach}/>
-      <AddNote onAdd={handleAdd}/>
+      <AddNote onAdd={handleAdd} edited={edit}/>
 
       {
         
@@ -53,6 +67,7 @@ function App() {
         title={noteItem.title}
         details={noteItem.details}
         onDelete={Delete}
+        onEdit={Edit}
         />)
       })
     

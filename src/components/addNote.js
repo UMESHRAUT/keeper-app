@@ -1,9 +1,15 @@
 import React, { useState } from  'react';
 function AddNote(props){
+
+    console.log(props.id);
+    console.log(props.edited.details);
+    
+    
     const [note,setNote]=useState({
-        title: "",
-        details: ""
+        title:props.edited.title ,
+        details:props.edited.details
     });
+    
 
     function handleChange(event){
         const{name,value}=event.target;
@@ -21,6 +27,14 @@ function AddNote(props){
         })
     }
 
+    if(props.edited.editNote===true){
+        setNote({
+            title:props.edited.title,
+            details:props.edited.details
+        })
+        props.edited.editNote=false
+    }
+
     return(
         <form>
             <input 
@@ -28,6 +42,7 @@ function AddNote(props){
             placeholder="title.." 
             onChange={handleChange} 
             value={note.title}
+
             ></input>
             <textarea 
             name="details" 
