@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 function Search(props){
     const [search,setSearch]=useState('');
-     
+     document.addEventListener('click',()=>{
+         setSearch('');
+     });
     function Reset(){
         setSearch('');
     }
