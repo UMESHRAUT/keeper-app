@@ -27,7 +27,7 @@ function App() {
   }
 
   let Array=searched.length>0?searched:notes;
-  searched.forEach(item=> console.log(item))
+
 
 
   function handleAdd(note){
